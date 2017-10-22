@@ -19,4 +19,9 @@ footer {
   font-size: 35px !important;
   color: black;
   margin-bottom: 20px;
+  transition: .3s;
+
+  &:hover {
+    color: #CD456B;
+  }
 }

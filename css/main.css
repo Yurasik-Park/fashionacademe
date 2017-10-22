@@ -447,8 +447,7 @@ header {
   position: fixed;
   left: 20px;
   top: 20px;
-  width: 50px;
-  height: 50px;
+  width: 120px;
   z-index: 101; }
 
 .portfolio {
@@ -510,7 +509,12 @@ footer {
 .my {
   font-size: 35px !important;
   color: black;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .my:hover {
+    color: #CD456B; }
 
 .photo img {
   height: 300px; }
@@ -609,16 +613,16 @@ body {
   align-items: center; }
 
 .wrapper-img {
-  width: 60vh; }
+  width: 70vh; }
 
 .city {
   margin-top: 20px;
   display: block;
   text-align: center;
   text-transform: uppercase;
-  color: black;
+  color: #CD456B;
   font-weight: 300;
-  font-size: 20px; }
+  font-size: 30px; }
 
 .about-img {
   width: 85%;
@@ -658,3 +662,30 @@ body {
 
 .address {
   font-weight: 700; }
+
+.profile-all {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.prof {
+  width: 45%; }
+
+#result {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 50px; }

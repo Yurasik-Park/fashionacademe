@@ -1,10 +1,10 @@
 
-var a;
+var data = [];
 $(document).ready(function() {
 
-    $('.about').on('click', function() {
-      a = $(this).find('span').text();
-      alert(a);
+    $('a').on('click', function() {
+      data[0] = $(this).data('num');
+      data[1] = $(this).find('span').text();
     });
 });
 var mytext = document.getElementById('mytext');
@@ -17,7 +17,7 @@ var sendbtn = document.getElementById('me');
 var key = 'ruso_q_712899_example';
 
 sendbtn.addEventListener('click', function() {
-    window.localStorage[key] = a;
+    window.localStorage[key] = data;
     getMessageFromLocalStorage();
 });
 
