@@ -1,0 +1,77 @@
+
+.photo img {
+  height: 300px;
+}
+.photo-all {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.photo {
+  width: calc(100% / 6 - 1rem);
+  margin: 0.5rem;
+  position: relative;
+  filter: opacity(.7);
+
+    &:hover {
+      filter: opacity(1);
+    }
+
+    &:hover .about {
+        visibility: visible;
+    }
+}
+.photo__name {
+  text-align: center;
+}
+.about {
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  color: white;
+  bottom: 20%;
+  left: 30%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 80px;
+      height: 10px;
+      background-color: white;
+      bottom: 110%;
+      left: 50%;
+      margin-left: -40px;
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1200px){
+  .photo {
+    width: calc(100% / 5 - 1rem);
+    margin: 0.5rem;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .photo {
+    width: calc(100% / 4 - 1rem);
+    margin: 0.5rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+  .photo {
+    width: calc(100% / 2 - 1rem);
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 479px){
+  .photo {
+    width: 90%;
+    margin: 0.5rem;
+  }
+}

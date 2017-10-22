@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FASHION ACADEME</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+    <header>
+      <ul class="header">
+        <li class="header-item"><a href="#">School</a></li>
+        <li class="header-item"><a href="women.html">Women</a></li>
+        <li class="header-item"><a href="men.html">Kids</a></li>
+        <li class="header-item"><a href="Us.html">About Us</a></li>
+        <li class="header-item"><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="main-logo">
+        <a href="main.html" class="header-link"><img src="img/logo/logo-circle.png" alt=""></a>
+      </div>
+    </header>
+    <main>
+      <div class="portfolio">
+        <div class="slideshow">
+          <img src="img/wictoria.jpg" alt="">
+          <div class="portfolio__text">
+            Wiktoria for Magdalena Frąckowiak Jewelry!
+            Our newface Wiktoria poses for  Magdalena Frąckowiak Jewelry ;)
+          </div>
+        </div>
+        <div class="slideshow">
+          <img src="img/3-24.jpg" alt="">
+          <div class="portfolio__text">
+            tra la la
+          </div>
+        </div>
+        <div class="slideshow">
+          <img src="img/Mg.jpg" alt="">
+          <div class="portfolio__text">
+            tra la la
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h3 class="footer__head">Subcribe</h3>
+      <ul class="socials">
+        <li><a href="" class="inst">inst</a></li>
+        <li><a href="" class="fb">fb</a></li>
+      </ul>
+    </footer>
+    <script>
+    $(".portfolio > div:gt(0)").hide();
+
+      setInterval(function() {
+        $('.portfolio > div:first')
+          .fadeOut(1000)
+          .next()
+          .fadeIn(1000)
+          .end()
+          .appendTo('.portfolio');
+      }, 3000);
+    </script>
+  </body>
+</html>

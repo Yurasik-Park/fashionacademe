@@ -1,0 +1,17 @@
+.portfolio {
+  position: relative;
+  height: 80vh;
+  transition: opacity 1s ease-in-out;
+}
+.slideshow{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+}
+img {
+  max-height: 100%;
+}
+.portfolio__text {
+  width: 400px;
+}

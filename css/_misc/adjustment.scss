@@ -1,0 +1,29 @@
+
+body {
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
