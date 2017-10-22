@@ -3,6 +3,15 @@ text-align: center;
 }
 
 .socials {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  border-bottom: 2px solid black;
+  margin-bottom: 40px;
+}
+.my {
+  font-size: 35px !important;
+  color: black;
+  margin-bottom: 20px;
 }

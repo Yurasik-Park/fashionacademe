@@ -3,7 +3,8 @@ var a;
 $(document).ready(function() {
 
     $('.about').on('click', function() {
-      a = $(this).find('span').data('height');
+      a = $(this).find('span').text();
+      alert(a);
     });
 });
 var mytext = document.getElementById('mytext');
@@ -34,3 +35,4 @@ window.addEventListener('storage', function(event) {
 // Если какие-то данные уже лежат в сессии, отображаем
 // их сразу после загрузки страницы
 getMessageFromLocalStorage();
+localStorage.clear();
