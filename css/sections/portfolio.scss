@@ -15,3 +15,13 @@ img {
 .portfolio__text {
   width: 400px;
 }
+.coner {
+  position: absolute;
+  left: 83%;
+  top: 83%;
+  width: 100px;
+  height: 100px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  z-index: 100;
+}

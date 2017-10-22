@@ -1,5 +1,10 @@
+footer {
+  margin-top: 50px;
+}
 .footer__head {
-text-align: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .socials {
@@ -7,7 +12,7 @@ text-align: center;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   margin-bottom: 40px;
 }
 .my {

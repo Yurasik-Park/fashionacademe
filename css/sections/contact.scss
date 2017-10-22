@@ -14,7 +14,12 @@
 }
 .contact {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+.address {
+  font-weight: 700;
 }
