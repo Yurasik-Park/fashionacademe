@@ -440,15 +440,16 @@ header {
     color: white;
     background-color: black; }
 
-.header-link {
-  display: block; }
-
 .main-logo {
   position: fixed;
   left: 20px;
   top: 20px;
   width: 120px;
   z-index: 101; }
+
+.header-item .current-menu {
+  background-color: black;
+  color: white; }
 
 .portfolio {
   position: relative;
@@ -547,7 +548,9 @@ footer {
     visibility: visible; }
 
 .photo__name {
-  text-align: center; }
+  text-align: center;
+  color: black;
+  font-family: 'Gloria Hallelujah', cursive; }
 
 .about {
   position: absolute;
@@ -622,7 +625,9 @@ body {
   text-transform: uppercase;
   color: #CD456B;
   font-weight: 300;
-  font-size: 30px; }
+  font-size: 30px;
+  word-spacing: 20px;
+  letter-spacing: 10px; }
 
 .about-img {
   width: 85%;
@@ -640,7 +645,7 @@ body {
 
 .contact-wrapper {
   position: absolute;
-  width: 25%;
+  width: 15%;
   bottom: 10%;
   left: 50%;
   margin-left: -12.5%;
@@ -689,3 +694,73 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 50px; }
+
+p {
+  margin: 0; }
+
+.casting {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.casting-text {
+  width: 60%; }
+
+.casting-form {
+  width: 35%; }
+
+.form-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.casting-text__school,
+.casting-text__model {
+  width: 45%; }
+
+.casting-text__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: justify; }
+
+label {
+  color: #808080;
+  text-transform: uppercase;
+  margin-bottom: 5px; }
+
+input {
+  border: 0;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 10px;
+  width: 60%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+input:focus {
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #CD456B; }

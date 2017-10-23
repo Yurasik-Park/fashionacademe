@@ -34,13 +34,14 @@ header {
       background-color: black;
     }
 }
-.header-link{
-  display: block;
-}
 .main-logo {
   position: fixed;
   left: 20px;
   top: 20px;
   width: 120px;
   z-index: 101;
+}
+.header-item .current-menu{
+  background-color: black;
+  color: white;
 }

@@ -19,13 +19,14 @@
   // их сразу после загрузки страницы
   getMessageFromLocalStorage();
 
-
-
-  place[0].src = "img/profile/" + b[0] + "/" + "1.jpg";
-  place[1].src = "img/profile/" + b[0] + "/" + "2.jpg";
-  place[2].src = "img/profile/" + b[0] + "/" + "3.jpg";
-  place[3].src = "img/profile/" + b[0] + "/" + "4.jpg";
-  place[4].src = "img/profile/" + b[0] + "/" + "5.jpg";
-  place[5].src = "img/profile/" + b[0] + "/" + "6.jpg";
-  place[6].src = "img/profile/" + b[0] + "/" + "7.jpg";
-  place[7].src = "img/profile/" + b[0] + "/" + "8.jpg";
+for (var i = 0; i <= 7; i++) {
+        place[i].src = "img/profile/" + b[0] + "/" + [i + 1] + ".jpg";
+}
+  // place[0].src = "img/profile/" + b[0] + "/" + "1.jpg";
+  // place[1].src = "img/profile/" + b[0] + "/" + "2.jpg";
+  // place[2].src = "img/profile/" + b[0] + "/" + "3.jpg";
+  // place[3].src = "img/profile/" + b[0] + "/" + "4.jpg";
+  // place[4].src = "img/profile/" + b[0] + "/" + "5.jpg";
+  // place[5].src = "img/profile/" + b[0] + "/" + "6.jpg";
+  // place[6].src = "img/profile/" + b[0] + "/" + "7.jpg";
+  // place[7].src = "img/profile/" + b[0] + "/" + "8.jpg";

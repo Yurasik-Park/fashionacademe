@@ -1,0 +1,46 @@
+p {
+  margin: 0;
+}
+.casting {
+  display: flex;
+  justify-content: space-around;
+}
+.casting-text {
+  width: 60%;
+}
+
+.casting-form {
+  width: 35%;
+}
+.form-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.casting-text__school,
+.casting-text__model {
+  width: 45%;
+}
+.casting-text__inner {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+}
+label {
+  color: #808080;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+input {
+  border: 0;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 10px;
+  width: 60%;
+  transition: .3s;
+}
+input:focus {
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #CD456B;
+}
