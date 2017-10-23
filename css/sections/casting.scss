@@ -44,3 +44,82 @@ input:focus {
   border: 0;
   border-bottom: 1px solid #CD456B;
 }
+
+.btn-sent {
+  border: 1px solid #808080;
+  background-color: transparent;
+  color: #808080;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  transition: .3s linear;
+  cursor: pointer;
+  outline: none;
+  align-self: center;
+
+  &:hover {
+    background:  #CD456B;
+    color: white;
+    border: 1px solid transparent;
+  }
+  &:hover span {
+    color: black;
+  }
+  &:active {
+    background: #808080;
+  }
+  & span {
+    color: #CD456B;
+  }
+}
+
+
+// radio button
+
+// .list {
+// 	flex: 0 20rem;
+// }
+
+.list__item {
+	position: relative;
+	&:hover .label {
+		color: #CD456B;
+		&::before {
+			border: 5px solid #CD456B;
+			margin-right: 2rem;
+		}
+	}
+}
+
+.radio-btn {
+	display: none;
+	&:checked + .label {
+		color: #CD456B;
+		&::before {
+			margin-right: 2rem;
+			border: 5px solid #CD456B;
+			background: #808080;
+		}
+	}
+}
+
+.label {
+	display: flex;
+	align-items: center;
+	padding: 1rem 0;
+	color: #808080;
+	font-size: 15px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.25s linear;
+}
+
+.label::before {
+	display: block;
+	height: 15px;
+	width: 15px;
+	margin-right: 0.625rem;
+	content: "";
+	border: 5px solid #808080;
+	border-radius: 50%;
+	transition: all 0.25s linear;
+}
