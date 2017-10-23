@@ -27,6 +27,10 @@ p {
   justify-content: space-between;
   text-align: justify;
 }
+.casting-text__model span,
+.casting-text__school span {
+  font-weight: bold;
+}
 label {
   color: #808080;
   text-transform: uppercase;

@@ -19,7 +19,7 @@ footer {
   font-size: 35px !important;
   color: black;
   margin-bottom: 20px;
-  transition: .3s;
+  transition: .3s linear;
 
   &:hover {
     color: #CD456B;

@@ -1,12 +1,15 @@
   var place = document.getElementsByClassName('img-prof');
   var result = document.getElementById('result');
+  var placeName = document.getElementById('profile-name');
   var key = 'ruso_q_712899_example';
-  var b;
+  var b, z;
+  var $x;
 
   // Приём сообщения
   function getMessageFromLocalStorage() {
     b = window.localStorage[key].split(',');
     result.textContent = b[1];
+    placeName.textContent = b[2];
   }
   window.addEventListener('storage', function(event) {
     if (event.key !== key) {

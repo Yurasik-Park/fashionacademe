@@ -5,6 +5,7 @@ $(document).ready(function() {
     $('a').on('click', function() {
       data[0] = $(this).data('num');
       data[1] = $(this).find('span').text();
+      data[2] = $(this).find('.photo__name').text();
     });
 });
 var mytext = document.getElementById('mytext');

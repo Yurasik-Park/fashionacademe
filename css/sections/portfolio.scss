@@ -2,22 +2,26 @@
   position: relative;
   height: 80vh;
   transition: opacity 1s ease-in-out;
+  display: flex;
 }
 .slideshow{
+  width: 100%;
   position: absolute;
   display: flex;
   align-items: center;
   height: 80vh;
+  justify-content: space-around;
 }
 img {
   max-height: 100%;
 }
 .portfolio__text {
   width: 400px;
+  font-family: $font-Uniq;
 }
 .coner {
   position: absolute;
-  left: 83%;
+  left: 90%;
   top: 83%;
   width: 100px;
   height: 100px;
