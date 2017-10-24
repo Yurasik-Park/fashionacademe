@@ -1,7 +1,4 @@
 
-.photo img {
-  height: 300px;
-}
 .photo-all {
     display: flex;
     flex-flow: row wrap;
@@ -55,7 +52,7 @@
 
 @media (min-width: 992px) and (max-width: 1200px){
   .photo {
-    width: calc(100% / 5 - 1rem);
+    width: 18%;
     margin: 0.5rem;
   }
 

@@ -17,14 +17,15 @@ img {
 }
 
 .portfolio__text {
-  width: 40%;
+  width: 35%;
   font-family: $font-Uniq;
 }
+
 .coner {
   position: absolute;
-  left: 90%;
-  top: 83%;
-  width: 100px;
+  left: 87%;
+  top: 85%;
+  width: 150px;
   height: 100px;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
@@ -33,11 +34,61 @@ img {
 
 /////////////////   Media querries     /////////
 
+
+
+@media (min-width: 992px) and (max-width: 1200px){
+  .coner {
+    left:83%;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px){
+
+  .portfolio__text {
+    width: 32%;
+  }
+  .coner {
+    left:78%;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px){
+  .portfolio {
+    margin-bottom: 100px;
+  }
+  .slideshow {
+    flex-direction: column;
+  }
+  .portfolio__text {
+    width: 70%;
+    margin-top: 20px;
+  }
+  .coner {
+    left: 67%;
+    top: 90%;
+  }
 }
 
 @media (max-width: 479px){
+  .portfolio {
+    margin-bottom: 100px;
+  }
+  .slideshow {
+    flex-direction: column;
+
+    & img {
+      max-width: 90%;
+    }
+  }
+  .portfolio__text {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .coner {
+    width: 100px;
+    height: 50px;
+    left: 65%;
+    top: 100%;
+  }
+
 }
