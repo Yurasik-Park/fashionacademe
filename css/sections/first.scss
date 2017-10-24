@@ -1,6 +1,4 @@
-html,body {
-  height: 100vh;
-}
+
 body {
   margin: 0;
 }
@@ -25,4 +23,14 @@ body {
   font-size: 30px;
   word-spacing: 20px;
   letter-spacing: 10px;
+}
+.casting__heading {
+  display: flex;
+  justify-content: center;
+  font-family: $font-Uniq;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.casting-text__inner {
+  color: #808080;
 }

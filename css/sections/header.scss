@@ -17,7 +17,7 @@ header {
   background-color: white;
 }
 .header-item {
-  margin-left: 50px;
+  margin-left: 3.125rem;
     &:first-child {
       margin-left: 0;
     }
@@ -36,12 +36,184 @@ header {
 }
 .main-logo {
   position: fixed;
-  left: 20px;
-  top: 20px;
-  width: 120px;
+  left: 2%;
+  top: 3%;
+  width: 10%;
   z-index: 101;
 }
 .header-item .current-menu{
   background-color: black;
   color: white;
+}
+
+
+
+
+
+///////////////// Media querries ////////////////
+
+@media (min-width: 768px) and (max-width: 991px){
+  .header {
+    font-size: 0.8rem;
+  }
+  .main-logo {
+    width: 7%;
+    left: 3%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+
+  .navigation {
+    transform: translateY(-100%);
+    position: absolute;
+    background-color: #808080;
+    height: 32vh;
+    width: 100%;
+    z-index: 102;
+    transition: 0.3s;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navigation_active {
+    transform: translateX(0%);
+  }
+
+  .header-item {
+    margin-left: 0;
+  }
+  .header-item a {
+    color: white;
+  }
+  .nav-close {
+    content: "";
+    display: none;
+    background-color: #CD456B;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: 75%;
+    top: 40px;
+    margin-left: -10px;
+    z-index: 125;
+    transform: rotate(46deg);
+  }
+  .nav-close::after {
+    content: "";
+    display: inherit;
+    background-color: #CD456B;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    z-index: 125;
+    transform: rotate(-92deg);
+  }
+  .nav-line {
+    content: "";
+    display: block;
+    background-color: #808080;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    left: 75%;
+    top: 40px;
+    margin-left: -10px;
+  }
+  .nav-line::before {
+    content: "";
+    display: block;
+    background-color: #808080;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    transform: translateY(-5px);
+  }
+  .nav-line::after {
+    content: "";
+    display: block;
+    background-color: #808080;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    transform: translateY(3px);
+  }
+
+}
+
+@media (max-width: 479px){
+  .navigation {
+    transform: translateY(-99%);
+    position: absolute;
+    background-color:  #808080;
+    height: 32vh;
+    width: 100%;
+    z-index: 102;
+    transition: 0.3s;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header-item {
+    margin-left: 0;
+  }
+  .header-item a {
+    color: white;
+  }
+  .navigation_active {
+    transform: translateX(0%);
+  }
+  .nav-close {
+    content: "";
+    display: none;
+    background-color: #CD456B;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: 90%;
+    top: 25px;
+    margin-left: -10px;
+    z-index: 125;
+    transform: rotate(46deg);
+  }
+  .nav-close::after {
+    content: "";
+    display: inherit;
+    background-color: #CD456B;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    z-index: 125;
+    transform: rotate(-92deg);
+  }
+  .nav-line {
+    content: "";
+    display: block;
+    background-color: #808080;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    left: 90%;
+    top: 25px;
+    margin-left: -10px;
+  }
+  .nav-line::before {
+    content: "";
+    display: block;
+    background-color: #808080;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    transform: translateY(-5px);
+  }
+  .nav-line::after {
+    content: "";
+    display: block;
+    background-color: #808080;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    transform: translateY(3px);
+  }
+
 }

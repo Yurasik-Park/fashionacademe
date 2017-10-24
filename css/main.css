@@ -11,7 +11,7 @@ html::-webkit-scrollbar-thumb {
   border-radius: 20px; }
 
 html, body {
-  height: 100% !important; }
+  height: 100%; }
 
 body {
   font-size: 16px;
@@ -38,6 +38,18 @@ img {
   max-width: 100%;
   height: auto;
   display: block; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  html, body {
+    font-size: 15px; } }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  html, body {
+    font-size: 14px; } }
+
+@media (max-width: 479px) {
+  html, body {
+    font-size: 13px; } }
 
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -441,7 +453,7 @@ header {
   background-color: white; }
 
 .header-item {
-  margin-left: 50px; }
+  margin-left: 3.125rem; }
   .header-item:first-child {
     margin-left: 0; }
   .header-item a {
@@ -457,14 +469,199 @@ header {
 
 .main-logo {
   position: fixed;
-  left: 20px;
-  top: 20px;
-  width: 120px;
+  left: 2%;
+  top: 3%;
+  width: 10%;
   z-index: 101; }
 
 .header-item .current-menu {
   background-color: black;
   color: white; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    font-size: 0.8rem; }
+  .main-logo {
+    width: 7%;
+    left: 3%; } }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .navigation {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    position: absolute;
+    background-color: #808080;
+    height: 32vh;
+    width: 100%;
+    z-index: 102;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .navigation_active {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%); }
+  .header-item {
+    margin-left: 0; }
+  .header-item a {
+    color: white; }
+  .nav-close {
+    content: "";
+    display: none;
+    background-color: #CD456B;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: 75%;
+    top: 40px;
+    margin-left: -10px;
+    z-index: 125;
+    -webkit-transform: rotate(46deg);
+    -ms-transform: rotate(46deg);
+    transform: rotate(46deg); }
+  .nav-close::after {
+    content: "";
+    display: inherit;
+    background-color: #CD456B;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    z-index: 125;
+    -webkit-transform: rotate(-92deg);
+    -ms-transform: rotate(-92deg);
+    transform: rotate(-92deg); }
+  .nav-line {
+    content: "";
+    display: block;
+    background-color: #808080;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    left: 75%;
+    top: 40px;
+    margin-left: -10px; }
+  .nav-line::before {
+    content: "";
+    display: block;
+    background-color: #808080;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px); }
+  .nav-line::after {
+    content: "";
+    display: block;
+    background-color: #808080;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px); } }
+
+@media (max-width: 479px) {
+  .navigation {
+    -webkit-transform: translateY(-99%);
+    -ms-transform: translateY(-99%);
+    transform: translateY(-99%);
+    position: absolute;
+    background-color: #808080;
+    height: 32vh;
+    width: 100%;
+    z-index: 102;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header-item {
+    margin-left: 0; }
+  .header-item a {
+    color: white; }
+  .navigation_active {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%); }
+  .nav-close {
+    content: "";
+    display: none;
+    background-color: #CD456B;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: 90%;
+    top: 25px;
+    margin-left: -10px;
+    z-index: 125;
+    -webkit-transform: rotate(46deg);
+    -ms-transform: rotate(46deg);
+    transform: rotate(46deg); }
+  .nav-close::after {
+    content: "";
+    display: inherit;
+    background-color: #CD456B;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    z-index: 125;
+    -webkit-transform: rotate(-92deg);
+    -ms-transform: rotate(-92deg);
+    transform: rotate(-92deg); }
+  .nav-line {
+    content: "";
+    display: block;
+    background-color: #808080;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    left: 90%;
+    top: 25px;
+    margin-left: -10px; }
+  .nav-line::before {
+    content: "";
+    display: block;
+    background-color: #808080;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px); }
+  .nav-line::after {
+    content: "";
+    display: block;
+    background-color: #808080;
+    width: 20px;
+    height: 2px;
+    position: relative;
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px); } }
 
 .portfolio {
   position: relative;
@@ -497,7 +694,7 @@ img {
   max-height: 100%; }
 
 .portfolio__text {
-  width: 400px;
+  width: 40%;
   font-family: "Gloria Hallelujah", cursive; }
 
 .coner {
@@ -617,9 +814,6 @@ footer {
     width: 90%;
     margin: 0.5rem; } }
 
-html, body {
-  height: 100vh; }
-
 body {
   margin: 0; }
 
@@ -652,6 +846,22 @@ body {
   font-size: 30px;
   word-spacing: 20px;
   letter-spacing: 10px; }
+
+.casting__heading {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 30px;
+  text-transform: uppercase; }
+
+.casting-text__inner {
+  color: #808080; }
 
 .about-img {
   width: 85%;

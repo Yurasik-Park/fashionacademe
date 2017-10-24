@@ -22,7 +22,44 @@ $(document).ready(function() {
 		return false;
 	});
 
+
+
+  $('.nav-line').click(function() {
+    $('.navigation').toggleClass('navigation_active');
+    $('.nav-close').css('display', 'block');
+  });
+
+  $('.nav-close').click(function() {
+    $('.navigation').toggleClass('navigation_active');
+    $('.nav-close').css('display', 'none');
+  });
+
 });
-$(document).ready(function() {
-  $('body').smoothWheel();
-})
+
+ // scroll
+
+ $(function(){
+
+	var $window = $(window);		//Window object
+
+	var scrollTime = .9;			//Scroll time
+	var scrollDistance = 250;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+
+	$window.on("mousewheel DOMMouseScroll", function(event){
+
+		event.preventDefault();
+
+		var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+		var scrollTop = $window.scrollTop();
+		var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+
+		TweenMax.to($window, scrollTime, {
+			scrollTo : { y: finalScroll, autoKill:true },
+				ease: Power1.easeOut,	//For more easing functions see https://api.greensock.com/js/com/greensock/easing/package-detail.html
+				autoKill: true,
+				overwrite: 5
+			});
+
+	});
+
+});
