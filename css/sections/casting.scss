@@ -77,11 +77,8 @@ input:focus {
 }
 
 
-// radio button
+////////////////////// radio button
 
-// .list {
-// 	flex: 0 20rem;
-// }
 
 .list__item {
 	position: relative;
@@ -126,4 +123,60 @@ input:focus {
 	border: 5px solid #808080;
 	border-radius: 50%;
 	transition: all 0.25s linear;
+}
+
+///////////////////////////    Media querries /////////////////////
+
+
+
+@media (min-width: 480px) and (max-width: 767px){
+  .casting {
+    flex-direction: column;
+    align-items: center;
+  }
+  .casting-form {
+    width: 60%;
+    margin-top: 15px;
+    margin-left: 45px;
+  }
+  .form-inner {
+    height: 65vh;
+
+  }
+  input {
+    width: 40%;
+  }
+
+}
+
+@media (max-width: 479px){
+
+  .casting-text {
+    width: 90%;
+  }
+
+  .casting-text__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .casting-text__school,
+   .casting-text__model {
+    width: 90%;
+    text-align: left;
+  }
+  .casting-text__model {
+    margin-top: 20px;
+  }
+  .casting {
+    flex-direction: column;
+    align-items: center;
+  }
+  .casting-form {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .form-inner {
+
+
+  }
 }

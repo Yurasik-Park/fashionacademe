@@ -23,3 +23,26 @@
 .address {
   font-weight: 700;
 }
+
+/////////////////////// Media querries /////////////////
+
+@media (min-width: 768px) and (max-width: 991px){
+  .contact-wrapper {
+    width: 20%;
+    margin-left: -10%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+  .contact-wrapper {
+    width: 30%;
+    margin-left: -15%;
+  }
+}
+
+@media (max-width: 479px){
+  .contact-wrapper {
+    width: 40%;
+    margin-left: -20%;
+  }
+}
