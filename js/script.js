@@ -23,3 +23,6 @@ $(document).ready(function() {
 	});
 
 });
+$(document).ready(function() {
+  $('body').smoothWheel();
+})
