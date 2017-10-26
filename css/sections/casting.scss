@@ -31,6 +31,17 @@ p {
 .casting-text__school span {
   font-weight: bold;
 }
+.casting__heading {
+  display: flex;
+  justify-content: center;
+  font-family: $font-Uniq;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.casting-text__inner {
+  color: #808080;
+}
+
 label {
   color: #808080;
   text-transform: uppercase;

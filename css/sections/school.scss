@@ -1,0 +1,63 @@
+.school-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.school__top,
+.school__photo {
+  width: 90%;
+  display: flex;
+}
+
+.school__top-text,
+.school__top-img {
+  width: 50%;
+}
+
+.school__photo-text,
+.school__photo-img {
+  width: 50%;
+}
+
+.school__top-heading,
+.school__photo-heading {
+  font-weight: bold;
+}
+
+.school__photo-text p,
+ .school__photo-text h3{
+  margin-left: 20px;
+}
+
+.poster {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.poster__img {
+  width: calc(100% / 4 - 1rem);
+  margin: 0.5rem;
+}
+
+.poster__heading {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 1.5625rem;
+  font-family: $font-Uniq;
+}
+.school-link {
+  margin-top: 10px;
+  color: #808080;
+  text-align: right;
+  width: 20%;
+  transition: .3 linear;
+
+  &:hover {
+    color: #CD456B;
+  }
+  &:active {
+    color: black;
+  }
+}
