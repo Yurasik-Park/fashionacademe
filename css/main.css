@@ -1281,7 +1281,10 @@ input:focus {
 
 .school__top-heading,
 .school__photo-heading {
-  font-weight: bold; }
+  font-weight: bold;
+  width: 50%;
+  border-bottom: 1px solid #808080;
+  color: #CD456B; }
 
 .school__photo-text p,
 .school__photo-text h3 {
@@ -1324,3 +1327,86 @@ input:focus {
     color: #CD456B; }
   .school-link:active {
     color: black; }
+
+.rose-mark {
+  color: #CD456B; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .school__photo-text p,
+  .school__top-text p {
+    font-size: .66rem; } }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .school__top,
+  .school__photo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .school__top-text,
+  .school__top-img {
+    width: 90%; }
+  .school__photo {
+    margin-top: 20px; }
+  .school__photo-text,
+  .school__photo-img {
+    width: 90%; }
+  .school__photo-text p,
+  .school__photo-text h3 {
+    margin-left: 0px; }
+  .school__photo-text {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0; }
+  .school__photo-img {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1; }
+  .school-link {
+    margin-bottom: 10px; }
+  .poster__img {
+    width: 51; } }
+
+@media (max-width: 479px) {
+  .school__top,
+  .school__photo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .school__top-text,
+  .school__top-img {
+    width: 90%; }
+  .school__photo-text,
+  .school__photo-img {
+    width: 90%; }
+  .school__photo-text p,
+  .school__photo-text h3 {
+    margin-left: 0px; }
+  .school__photo-text {
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0; }
+  .school__photo-img {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1; }
+  .school-link {
+    width: 40%;
+    margin-bottom: 10px; }
+  .poster__img {
+    width: 51%; } }
