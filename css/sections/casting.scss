@@ -136,6 +136,17 @@ input:focus {
 	transition: all 0.25s linear;
 }
 
+.form__complete {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #808080;
+  opacity: 0;
+}
+.icon-complete{
+  font-size: 20px !important;
+  color: #CD456B;
+}
+
 ///////////////////////////    Media querries /////////////////////
 
 

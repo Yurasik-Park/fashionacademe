@@ -16,7 +16,7 @@ $(document).ready(function() {
 			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
-			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$('.form__complete').animate({opacity: "1"}, 1000);
 			$("#form").trigger("reset");
 		});
 		return false;
@@ -43,7 +43,7 @@ $(document).ready(function() {
 	var $window = $(window);		//Window object
 
 	var scrollTime = .9;			//Scroll time
-	var scrollDistance = 250;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+	var scrollDistance = 350;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
 
 	$window.on("mousewheel DOMMouseScroll", function(event){
 

@@ -579,6 +579,8 @@ header {
 @media (max-width: 479px) {
   header {
     margin-bottom: 80px; }
+  .main-logo {
+    width: 15%; }
   .navigation {
     -webkit-transform: translateY(-110%);
     -ms-transform: translateY(-110%);
@@ -1197,6 +1199,16 @@ input:focus {
   -o-transition: all 0.25s linear;
   transition: all 0.25s linear; }
 
+.form__complete {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #808080;
+  opacity: 0; }
+
+.icon-complete {
+  font-size: 20px !important;
+  color: #CD456B; }
+
 @media (min-width: 480px) and (max-width: 767px) {
   .casting {
     -webkit-box-orient: vertical;
@@ -1331,6 +1343,11 @@ input:focus {
 .rose-mark {
   color: #CD456B; }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  .school__photo-text p,
+  .school__top-text p {
+    font-size: .85rem; } }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .school__photo-text p,
   .school__top-text p {
@@ -1372,7 +1389,7 @@ input:focus {
   .school-link {
     margin-bottom: 10px; }
   .poster__img {
-    width: 51; } }
+    width: 51%; } }
 
 @media (max-width: 479px) {
   .school__top,
