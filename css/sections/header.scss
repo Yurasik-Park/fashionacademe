@@ -68,6 +68,10 @@ header {
     margin-bottom: 100px;
   }
 
+  .main-logo {
+    position: absolute;
+  }
+
   .navigation {
     transform: translateY(-110%);
     position: absolute;
@@ -153,6 +157,7 @@ header {
 
   .main-logo {
     width: 15%;
+    position: absolute;
   }
   .navigation {
     transform: translateY(-110%);

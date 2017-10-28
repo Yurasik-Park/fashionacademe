@@ -488,6 +488,8 @@ header {
 @media (min-width: 480px) and (max-width: 767px) {
   header {
     margin-bottom: 100px; }
+  .main-logo {
+    position: absolute; }
   .navigation {
     -webkit-transform: translateY(-110%);
     -ms-transform: translateY(-110%);
@@ -580,7 +582,8 @@ header {
   header {
     margin-bottom: 80px; }
   .main-logo {
-    width: 15%; }
+    width: 15%;
+    position: absolute; }
   .navigation {
     -webkit-transform: translateY(-110%);
     -ms-transform: translateY(-110%);
@@ -1343,14 +1346,11 @@ input:focus {
 .rose-mark {
   color: #CD456B; }
 
-<<<<<<< HEAD
 @media (min-width: 992px) and (max-width: 1200px) {
   .school__photo-text p,
   .school__top-text p {
     font-size: .85rem; } }
 
-=======
->>>>>>> e436017718d987a06a9cb608727dc01756348dc6
 @media (min-width: 768px) and (max-width: 991px) {
   .school__photo-text p,
   .school__top-text p {
@@ -1392,11 +1392,7 @@ input:focus {
   .school-link {
     margin-bottom: 10px; }
   .poster__img {
-<<<<<<< HEAD
     width: 51%; } }
-=======
-    width: 51; } }
->>>>>>> e436017718d987a06a9cb608727dc01756348dc6
 
 @media (max-width: 479px) {
   .school__top,
