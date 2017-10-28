@@ -69,12 +69,16 @@
 }
 
 //////////////////Media ////////////
+<<<<<<< HEAD
 @media (min-width: 992px) and (max-width: 1200px){
   .school__photo-text p,
   .school__top-text p {
     font-size: .85rem;
   }
 }
+=======
+
+>>>>>>> e436017718d987a06a9cb608727dc01756348dc6
 @media (min-width: 768px) and (max-width: 991px){
   .school__photo-text p,
   .school__top-text p {
@@ -114,7 +118,11 @@
     margin-bottom: 10px;
   }
   .poster__img {
+<<<<<<< HEAD
     width: 51%;
+=======
+    width: 51;
+>>>>>>> e436017718d987a06a9cb608727dc01756348dc6
   }
 }
 
