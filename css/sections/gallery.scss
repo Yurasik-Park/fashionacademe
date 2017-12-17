@@ -1,3 +1,18 @@
+.arrive {
+  display: block;
+  &::after {
+    content: '';
+    top: 10px;
+    left: 10px;
+    display: block;
+    position: absolute;
+    background: url('../img/plane/airplane-flight.png');
+    width: 24px;
+    height: 24px;
+    z-index: 2000;
+  }
+}
+
 
 .photo-all {
     display: flex;
@@ -9,6 +24,7 @@
   margin: 0.5rem;
   position: relative;
   filter: opacity(.7);
+  transition: .3s;
 
     &:hover {
       filter: opacity(1);
@@ -25,12 +41,14 @@
 
 }
 .about {
+  width: 200px;
   position: absolute;
   visibility: hidden;
   text-align: center;
   color: white;
+  margin-left: -100px;
   bottom: 20%;
-  left: 30%;
+  left: 50%;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 15px;

@@ -793,6 +793,19 @@ footer {
   .my:hover {
     color: #CD456B; }
 
+.arrive {
+  display: block; }
+  .arrive::after {
+    content: '';
+    top: 10px;
+    left: 10px;
+    display: block;
+    position: absolute;
+    background: url("../img/plane/airplane-flight.png");
+    width: 24px;
+    height: 24px;
+    z-index: 2000; }
+
 .photo-all {
   display: -webkit-box;
   display: -webkit-flex;
@@ -813,7 +826,10 @@ footer {
   margin: 0.5rem;
   position: relative;
   -webkit-filter: opacity(0.7);
-  filter: opacity(0.7); }
+  filter: opacity(0.7);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
   .photo:hover {
     -webkit-filter: opacity(1);
     filter: opacity(1); }
@@ -826,12 +842,14 @@ footer {
   font-family: "Gloria Hallelujah", cursive; }
 
 .about {
+  width: 200px;
   position: absolute;
   visibility: hidden;
   text-align: center;
   color: white;
+  margin-left: -100px;
   bottom: 20%;
-  left: 30%;
+  left: 50%;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 15px; }
@@ -972,7 +990,8 @@ body {
   flex-wrap: wrap; }
 
 .prof {
-  width: 45%; }
+  width: 43%;
+  margin: 5px; }
 
 #result {
   display: -webkit-box;
