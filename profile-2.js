@@ -21,10 +21,10 @@
   // Если какие-то данные уже лежат в сессии, отображаем
   // их сразу после загрузки страницы
   getMessageFromLocalStorage();
-
-for (var i = 0; i <= 7; i++) {
-        place[i].src = "img/profile/" + b[0] + "/" + [i + 1] + ".jpg";
-}
+// 
+// for (var i = 0; i <= 7; i++) {
+//         place[i].src = "img/profile/" + b[0] + "/" + [i + 1] + ".jpg";
+// }
   // place[0].src = "img/profile/" + b[0] + "/" + "1.jpg";
   // place[1].src = "img/profile/" + b[0] + "/" + "2.jpg";
   // place[2].src = "img/profile/" + b[0] + "/" + "3.jpg";

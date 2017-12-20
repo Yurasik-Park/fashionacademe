@@ -2,7 +2,7 @@
   display: block;
   &::after {
     content: '';
-    top: 10px;
+    bottom: 75px;
     left: 10px;
     display: block;
     position: absolute;
@@ -40,6 +40,9 @@
   font-family: $font-Uniq;
 
 }
+.about-item {
+  background: rgba(0, 0, 0, 0.2);
+}
 .about {
   width: 200px;
   position: absolute;
@@ -51,18 +54,18 @@
   left: 50%;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 12px;
 
     &::after {
       content: "";
       position: absolute;
       display: block;
-      width: 80px;
-      height: 10px;
+      width: 70px;
+      height: 8px;
       background-color: white;
       bottom: 110%;
       left: 50%;
-      margin-left: -40px;
+      margin-left: -35px;
     }
 }
 

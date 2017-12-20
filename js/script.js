@@ -1,3 +1,5 @@
+// mark menu
+
 var item = document.getElementsByClassName('header-item');
 var menu;
 
@@ -7,6 +9,9 @@ for(var i = 0; i < item.length; i++) {
     item[i].children[0].className += " current-menu";
   }
 }
+
+// form for study
+
 $(document).ready(function() {
 
 	$("#form").submit(function() {
@@ -22,6 +27,8 @@ $(document).ready(function() {
 		return false;
 	});
 
+
+// mobile menu
 
 
   $('.nav-line').click(function() {
