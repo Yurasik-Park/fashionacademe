@@ -968,7 +968,7 @@ body {
   width: 43%;
   margin: 5px; }
 
-#result {
+#profile-data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -977,7 +977,12 @@ body {
   justify-content: center;
   margin-bottom: 50px;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  font-weight: 300; }
+
+.about-data {
+  margin: 0 5px 0 2px;
+  font-weight: normal; }
 
 #profile-name {
   display: -webkit-box;

@@ -39,7 +39,6 @@ function getWomenHTML(obj) {
                        '<span class="about-item">Eyes: '+ obj.eyes +' </span>'+
                    '</div>'+
                '</a>';
-           // '</div>';
   return el;
 };
 
