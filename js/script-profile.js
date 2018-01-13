@@ -26,13 +26,13 @@ getWomenJSON().then(function(data) {
       for (var k = 0; k < data[i].images.length; k++) {
         strImg += '<div class="prof"><img src="'+ data[i].images[k] +'" alt="'+ data[i].Name +'" class="img-prof"></div>';
       };
-      strAbout += 'HEIGHT: <span class="about-data">' + data[i].Height + '</span>'+
-                  'BUST: <span class="about-data">' + data[i].Bust + '</span>'+
-                  'WAIST: <span class="about-data">' + data[i].Waist + '</span>'+
-                  'HIPS: <span class="about-data">' + data[i].Hips + '</span>'+
-                  'SHOES: <span class="about-data">' + data[i].Shoes + '</span>'+
-                  'HAIR: <span class="about-data">' + data[i].Hair + '</span>'+
-                  'EYES: <span class="about-data">' + data[i].Eyes + '</span>';
+      strAbout += '<p>HEIGHT: <span class="about-data">' + data[i].Height + '</span></p>'+
+                  '<p>BUST: <span class="about-data">' + data[i].Bust + '</span></p>'+
+                  '<p>WAIST: <span class="about-data">' + data[i].Waist + '</span></p>'+
+                  '<p>HIPS: <span class="about-data">' + data[i].Hips + '</span></p>'+
+                  '<p>SHOES: <span class="about-data">' + data[i].Shoes + '</span></p>'+
+                  '<p>HAIR: <span class="about-data">' + data[i].Hair + '</span></p>'+
+                  '<p>EYES: <span class="about-data">' + data[i].Eyes + '</span></p>';
       $('.profile-all').html(strImg);
       $('#profile-name').html(data[i].Name + ' ' + data[i].SureName);
       $('#profile-data').html(strAbout);

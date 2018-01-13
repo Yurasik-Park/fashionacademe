@@ -49,8 +49,8 @@ $(document).ready(function() {
 
 	var $window = $(window);		//Window object
 
-	var scrollTime = .9;			//Scroll time
-	var scrollDistance = 350;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+	var scrollTime = .5;			//Scroll time
+	var scrollDistance = 250;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
 
 	$window.on("mousewheel DOMMouseScroll", function(event){
 
@@ -70,3 +70,16 @@ $(document).ready(function() {
 	});
 
 });
+
+// for main slider
+
+$(".portfolio > div:gt(0)").hide();
+
+  setInterval(function() {
+    $('.portfolio > div:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('.portfolio');
+  }, 5000);
