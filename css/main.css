@@ -691,7 +691,8 @@ img {
 
 .portfolio__text {
   width: 35%;
-  font-family: "Gloria Hallelujah", cursive; }
+  font-family: "Gloria Hallelujah", cursive;
+  text-align: center; }
 
 .coner {
   position: absolute;
