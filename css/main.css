@@ -854,11 +854,17 @@ img {
     line-height: 35px;
 }
   .poster-main-first-text {
-  margin-left: 25px;
+  margin-left: 21px;
+    font-size: 15px;
+    
 }
 .poster-main-second-text {
     margin-left: 25px;
+  font-size: 14px
 }
+  .poster-main-button {
+  font-size: 12px;
+  }
 }
 
 footer {
