@@ -18,7 +18,8 @@ $(document).ready(function() {
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
-			data: $(this).serialize()
+			data: $(this).serialize(),
+			$('.form__complete').animate({opacity: "1"}, 1000)
 		}).done(function() {
 			$(this).find("input").val("");
 			$('.form__complete').animate({opacity: "1"}, 1000);
