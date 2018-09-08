@@ -772,7 +772,10 @@ img {
   .portfolio__text {
     width: 32%; }
   .coner {
-    left: 78%; } }
+    left: 78%; } 
+.poster-main {
+  width: 80%;
+}}
 
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -788,7 +791,11 @@ img {
     margin-top: 20px; }
   .coner {
     left: 67%;
-    top: 90%; } }
+    top: 90%; }
+   .poster-main {
+  width: 80%;
+}
+}
 
 @media (max-width: 479px) {
   .portfolio {
@@ -807,7 +814,10 @@ img {
     width: 100px;
     height: 50px;
     left: 65%;
-    top: 100%; } }
+    top: 100%; }
+.poster-main {
+  width: 80%;
+}}
 
 footer {
   margin-top: 50px; }
