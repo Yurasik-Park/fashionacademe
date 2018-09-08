@@ -775,7 +775,20 @@ img {
     left: 78%; } 
 .poster-main {
   width: 80%;
-}}
+}
+.poster-main, portfolio__text {
+  width: 80%;
+}
+  .poster-main-header {
+    margin-left: 0px;
+}
+  .poster-main-first-text {
+  margin-left: 0px;
+}
+.poster-main-second-text {
+    margin-left: 0px;
+}
+}
 
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -794,6 +807,19 @@ img {
     top: 90%; }
    .poster-main {
   width: 80%;
+},
+  .poster-main,
+  .portfolio__text{
+  width: 80%;
+}
+  .poster-main-header {
+    margin-left: 0px;
+}
+  .poster-main-first-text {
+  margin-left: 0px;
+}
+.poster-main-second-text {
+    margin-left: 0px;
 }
 }
 
@@ -817,7 +843,21 @@ img {
     top: 100%; }
 .poster-main {
   width: 80%;
-}}
+}
+.poster-main,
+  .portfolio__text{
+  width: 80%;
+}
+  .poster-main-header {
+    margin-left: 0px;
+}
+  .poster-main-first-text {
+  margin-left: 0px;
+}
+.poster-main-second-text {
+    margin-left: 0px;
+}
+}
 
 footer {
   margin-top: 50px; }
