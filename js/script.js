@@ -15,11 +15,12 @@ for(var i = 0; i < item.length; i++) {
 $(document).ready(function() {
 
 	$("#form").submit(function() {
+		$('.form__complete').animate({opacity: "1"}, 1000);
+
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
-			data: $(this).serialize(),
-			$('.form__complete').animate({opacity: "1"}, 1000)
+			data: $(this).serialize()
 		}).done(function() {
 			$(this).find("input").val("");
 			$('.form__complete').animate({opacity: "1"}, 1000);
