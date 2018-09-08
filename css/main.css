@@ -777,7 +777,7 @@ img {
   width: 80%;
 }
 .poster-main .portfolio__text {
-  width: 80%;
+  width: 100%;
 }
   .poster-main-header {
     margin-left: 0px;
@@ -810,7 +810,7 @@ img {
 },
   .poster-main
   .portfolio__text{
-  width: 80%;
+  width: 100%;
 }
   .poster-main-header {
     margin-left: 0px;
@@ -846,7 +846,7 @@ img {
 }
 .poster-main,
   .portfolio__text{
-  width: 80%;
+  width: 100%;
 }
   .poster-main-header {
     margin-left: 0px;
