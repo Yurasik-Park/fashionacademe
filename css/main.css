@@ -735,6 +735,15 @@ img {
     -webkit-flex-item-align: center;
 }
 
+.poster-main-phone {
+    border: 0;
+    border-bottom: 1px solid #808080;
+    margin-bottom: 10px;
+    width: 60%;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
 .coner {
   position: absolute;
   left: 87%;
