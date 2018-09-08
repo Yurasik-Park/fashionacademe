@@ -700,7 +700,7 @@ img {
   display: flex;
   height: 99.4%;
   width: 35%;
-  border: 3px solid #808080;
+/*   border: 3px solid #808080; */
 }
 .poster-main-header {
     color: #CD456D;
