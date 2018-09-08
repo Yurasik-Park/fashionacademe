@@ -26,6 +26,19 @@ $(document).ready(function() {
 		});
 		return false;
 	});
+	
+	$("#poster-form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "poster-phone.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$('.form__complete').animate({opacity: "1"}, 1000);
+			$("#poster-form").trigger("reset");
+		});
+		return false;
+	});
 
 
 // mobile menu
@@ -82,4 +95,4 @@ $(".portfolio > div:gt(0)").hide();
       .fadeIn(1000)
       .end()
       .appendTo('.portfolio');
-  }, 5000);
+  }, 15000);
