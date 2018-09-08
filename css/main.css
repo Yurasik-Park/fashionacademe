@@ -697,12 +697,8 @@ img {
 
 .poster-main {
   background-color: white;
-  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 99.4%;
-  display: flex;
   width: 35%;
   border: 3px solid #808080;
 }
@@ -710,7 +706,6 @@ img {
     color: #CD456D;
     line-height: 45px;
     font-size: 48px;
-    color: #808080;
     margin-left: 41px;
 }
 
@@ -724,11 +719,9 @@ img {
     padding-left: 44px;
 }
 
-.postre-main-button {
+.poster-main-button {
     margin-top: 33px;
     width: 70%;
-    text-color: white;
-    background-color: white;
     border: 3px solid #CD456D;
     background-color: transparent;
     text-transform: uppercase;
