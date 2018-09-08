@@ -736,6 +736,7 @@ img {
 }
 
 .poster-main-phone {
+    margin-top: 55px;
     border: 0;
     border-bottom: 1px solid #808080;
     margin-bottom: 10px;
@@ -743,6 +744,10 @@ img {
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
+}
+
+#poster-form{
+  align-items: center;
 }
 .coner {
   position: absolute;
